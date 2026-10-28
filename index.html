@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GoPro Web</title>
+  <meta name="description" content="Đọc bài và ôn tập lộ trình C# của GoPro, đồng bộ tiến độ với app trên laptop.">
+  <meta name="theme-color" content="#2459e0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="GoPro">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app"><div class="panel muted">Đang mở GoPro…</div></div>
+  <div class="tabbar" id="tabbar" hidden>
+    <nav>
+      <a href="#/" data-tab="home"><span>🏠</span>Trang chủ</a>
+      <a href="#/lo-trinh" data-tab="path"><span>📚</span>Lộ trình</a>
+      <a href="#/on-tap" data-tab="review"><span>🔁</span>Ôn tập</a>
+      <a href="#/leetcode" data-tab="lc"><span>🧩</span>LeetCode</a>
+    </nav>
+  </div>
+  <script src="vendor/supabase-2.49.4.js"></script>
+  <script src="highlight.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
